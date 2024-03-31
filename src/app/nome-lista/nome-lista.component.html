@@ -1,0 +1,17 @@
+<div class="container">
+    <h1>Nomes</h1>
+  
+    <div class="botao-nome">
+      <div *ngFor="let nome of nomes"> 
+        <button (click)="exibirSobrenome(nome.sobrenome)">{{ nome.nome }}</button>
+      </div>
+    </div>
+  
+    <div *ngIf="sobrenomeSelecionado">
+      <p>Sobrenome: {{ sobrenomeSelecionado }}</p>
+    </div>
+</div>
+  
+  
+
+  
